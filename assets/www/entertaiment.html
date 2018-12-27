@@ -10,7 +10,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="js/loading.min.css">
+	<!--<link rel="stylesheet" href="js/loading.min.css">-->
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
@@ -20,14 +20,14 @@
 	<title>Entretenimiento</title>
 
 
-	<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
-	<script src="js/zepto.min.js"></script>
+	<!--<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
+	<script src="js/zepto.min.js"></script>-->
 
 	<script src="js/jquery-3.3.1.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/jquery.navigate.js"></script>
 	<script src="js/custom-keyboard-navigation.js"></script>
-	<script src="js/jquery.loading.min.js"></script>
+	<!--<script src="js/jquery.loading.min.js"></script> -->
 
 </head>
 
@@ -54,7 +54,7 @@
 		</ul>
 
 		<a class="navbar-brand" href="#">
-			<img src="./imagesjv/danlogo.png" class="align-top" alt="Movich Hotels logo">
+			<img src="./imagesjv/icon_logo.svg" class="align-top" alt="Movich Hotels logo">
 		</a>
 	</nav>
 
@@ -199,7 +199,7 @@
 						<button type="button" class="round-corners-menu-btn selectable m-3">
 							<img src="imagesjv/icon_youtube.svg" alt="Youtube">
 						</button>
-						<button type="button" class="round-corners-menu-btn selectable m-3" onClick="aaap('com.android.chrome')">
+						<button type="button" class="round-corners-menu-btn selectable m-3">
 							<img src="imagesjv/icon_chrome.svg" alt="Chrome"> Chrome
 						</button>
 					</div>
@@ -261,7 +261,7 @@
 							<img src="imagesjv/icon_youtube.svg" alt="Youtube">
 						</button>
 						<br>
-						<button type="button" class="round-corners-menu-btn selectable m-3" onClick="aaap('com.android.chrome')">
+						<button type="button" class="round-corners-menu-btn selectable m-3">
 							<img src="imagesjv/icon_chrome.svg" alt="Chrome"> Chrome
 						</button>
 					</div>
@@ -480,15 +480,7 @@
   	}
 
 </script>	
-<script type="text/javascript">
 
-	function aaap(appa){
-	$.showLoading({name: 'circle-fade',allowHide: true}); 
-	window.launch.app({package:appa, activity:'MainActivity'});
-	}
-
-</script>	
-<script src="js/dmd.js"></script>
 </body>
 
 </html>

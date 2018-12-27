@@ -1,8 +1,7 @@
 @font-face {
 	font-family: 'hypatia-sans-pro', sans-serif;
-	src: url("fonts/HypatiaSansPro-Regular.otf") format("opentype");
+	src: url("./fonts/HypatiaSansPro-Regular.otf") format("opentype");
 }
-
 
 .card {
     background-color: rgba(0, 0, 0, 0.8);
@@ -10,7 +9,7 @@
 }
 
 body {
-	/*font-family: 'Roboto', 'hypatia-sans-pro' ;*/
+	font-family: 'hypatia-sans-pro', sans-serif !important;
 	font-size: 20px;
 	overflow:hidden;
 }
@@ -215,7 +214,7 @@ color:  #fff;
 }
 
 .selectable-contour:focus, .selectable-contour:hover,.selectable-contour.selected {
-	border: 2px solid #FDFFA2;
+	border: 2px solid #fff;
 	background: rgba(255,255,255,0.05);
 	border-radius:0.4rem; 
 	text-decoration: none;
@@ -259,7 +258,7 @@ color:  #fff;
 }
 
 .menu-icon.active {
-	color: #fdffa2!important;
+	color: #fff!important;
 }
 
 .menu-icon div.icon-contour {
@@ -297,7 +296,7 @@ a.menu-icon:active,a.menu-icon:focus {
 }
 
 .menu-icon div.icon-contour:hover,.menu-icon div.icon-contour:focus ,.menu-icon.selected div.icon-contour {
-	border: 2px solid #FDFFA2;
+	border: 2px solid #fff;
 	border-radius: 1rem;
 	background: rgba(255,255,255,0.05);
 	fill: #fff;
@@ -373,7 +372,7 @@ a.menu-icon:active,a.menu-icon:focus {
 
 .back-btn:hover, .back-btn:focus, .back-btn.selected {
 	background-color: rgba(255, 255, 255, 0.1);
-	border: 2px solid #FDFFA2;
+	border: 2px solid #fff;
 	outline: none;
 }
 
@@ -413,14 +412,14 @@ a.menu-icon:active,a.menu-icon:focus {
 
 
 .round-corners-menu-btn:hover, .round-corners-menu-btn:focus, .round-corners-menu-btn.selected {
-	border: 2px solid #FDFFA2;
+	border: 2px solid #fff;
 	background: rgba(255,255,255,0.05);
 	outline: none;
 	color:#fff;
 }
 
 .round-corners-menu-btn:active {
-	border: 2px solid #FDFFA2;
+	border: 2px solid #fff;
 	padding-top:0.6rem;
 	padding-bottom:0.6rem;
 	font-size: 1.2rem;
@@ -429,8 +428,9 @@ a.menu-icon:active,a.menu-icon:focus {
 
 .round-corners-menu-btn.active {
 	outline: none;
-    color: #fdffa2;
+    color: #ffffff;
     background: rgba(255,255,255,0.2);
+    font-weight: 700;
 }
 
 

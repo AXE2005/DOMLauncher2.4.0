@@ -150,7 +150,7 @@ function toggleWifi(returnVal){
         $('#toggleWifi').find('input').prop('checked', true);  
     }else if(returnVal.returnVal === 'disabled'){
         $('#toggleWifi').find('input').prop('checked', false); 
-        //setTimeout(function(){window.mobiledata.check({success:toggleData});}, 10000);
+        setTimeout(function(){window.mobiledata.check({success:toggleData});}, 10000);
     }
 }
 
@@ -320,8 +320,7 @@ function onPause() {}
 	
 /*Handle the resume event*/
 function onResume() {
-	
-    //setTimeout(domlChecks, 1000);
+    setTimeout(domlChecks, 1000);
 }
 
 function openExternal(elem) {
@@ -337,5 +336,3 @@ function compare(a,b) {
     return 1;
   return 0;
 }
-
-
