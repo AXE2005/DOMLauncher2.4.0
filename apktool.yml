@@ -1,0 +1,21 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: DOMLauncher2.4.0.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '21'
+sharedLibrary: false
+unknownFiles:
+  README.md: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '7'
+  versionName: 2.4.0
