@@ -8,22 +8,24 @@
 <meta name="Description" content="DOMLauncher and DOMods, custom HTML5 Android Launcher.">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="js/loading.min.css">-->
+	<link rel="stylesheet" href="js/loading.min.css">
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
-	 <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/stylesv2.css">
 
-	<title>Room service</title>
-
+	<title>Home</title>
 
 	<script src="js/jquery-3.3.1.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/jquery.navigate.js"></script>
 	<script src="js/custom-keyboard-navigation.js"></script>
+   	<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
+	<script src="js/zepto.min.js"></script>
+	<script src="js/jquery.loading.min.js"></script> 
 
 </head>
 
@@ -33,10 +35,10 @@
 		<ul class="navbar-nav">
 			<li class="nav-item ml-3  mt-3">
 				<h3 class="text-white">
-					<div class="d-inline-block">
+					<div class="d-inline-block" id="fecha_top">
 					Martes 6 de Noviembre 2018 |
 					</div>
-					<div class="d-inline-block"> Hora: 8:00pm | 
+					<div class="d-inline-block"> Hora: <span id="hora_top">8:00pm</span> | 
 						<a class="badged-item d-inline-block selectable-contour selectable" href="#" data-toggle="collapse" data-target="#messagesContainer" aria-expanded="false" aria-controls="variable_info2">
 					  		
 								<span class="notify-badge">1</span>
@@ -321,7 +323,7 @@
 
 				
 				
-				<a class="btn menu-icon selectable" href="./netflix.html">
+				<a class="btn menu-icon selectable" onclick="aaap('com.netflix.mediaclient')" href="#">
 
 					<div class="col text-center  icon-contour">
 						
@@ -455,7 +457,8 @@ function loadContent(btn){
   	}
 
 </script>	
-
+<script src="js/dmd.js"></script>
+<script src="js/funciones.js"></script>
 </body>
 
 </html>
