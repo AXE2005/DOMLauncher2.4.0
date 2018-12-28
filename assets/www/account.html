@@ -10,7 +10,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="js/loading.min.css">-->
+	<link rel="stylesheet" href="js/loading.min.css">
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
@@ -19,18 +19,18 @@
 	<title>Account</title>
 
 
-	<!--<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
-	<script src="js/zepto.min.js"></script>-->
+	<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
+	<script src="js/zepto.min.js"></script>
 
 	<script src="js/jquery-3.3.1.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/jquery.navigate.js"></script>
 	<script src="js/custom-keyboard-navigation.js"></script>
-	<!--<script src="js/jquery.loading.min.js"></script> -->
+	<script src="js/jquery.loading.min.js"></script>
 
 </head>
 
-<body class="bg-secondary bg-img">
+<body class="bg-secondary bg-img" onLoad="print_cuenta()">
 	<!-- HEADER -->
 	<nav id="top-nav" class="navbar navbar-dark bg-gradient-up-down">
 		<ul class="navbar-nav">
@@ -107,27 +107,8 @@
 						<h3 class="section-title mb-5">
 							Cargos a la habitación
 						</h3>
-						<div class="account-summary">
-							<div>
-								<span>Alojamiento / Noche </span>
-								<span class="price">$150.000</span>
-							</div>
-							<div>
-								<span>Seguro Hotelero </span>
-								<span class="price">$150.000</span>
-							</div>
-							<div>
-								<span>Restaurante Ebano </span>
-								<span class="price">$150.000</span>
-							</div>
-							<div>
-								<span>Room service </span>
-								<span class="price">$150.000</span>
-							</div>
-							
-							<div class="total">
-								<span class="price">Total:&nbsp;&nbsp;$600.000</span>
-							</div>
+						<div class="account-summary" id="cuenta">
+							Consultando el estado de su cuenta en el sistema ... 
 						</div>
 						
 						
@@ -246,7 +227,8 @@
 
 		
 	</nav>
-
+<script src="js/dmd.js"></script>
+<script src="js/funciones.js"></script>
 </body>
 
 </html>

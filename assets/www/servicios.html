@@ -10,7 +10,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="js/loading.min.css">-->
+	<link rel="stylesheet" href="js/loading.min.css">
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
@@ -24,6 +24,7 @@
 	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/jquery.navigate.js"></script>
 	<script src="js/custom-keyboard-navigation.js"></script>
+	<script src="js/jquery.loading.min.js"></script> 
 
 </head>
 
@@ -96,10 +97,8 @@
 							<div class="navbar-nav w-100">
 								<!--ITEM 1-->
 								
-								<button id="selectedDefault" type="button" id="variable_button1" class="round-corners-menu-btn selectable activable" data-toggle="collapse" data-target="#variable_info1"
-								 aria-expanded="false" aria-controls="variable_info1">
-									Servicios
-								</button>
+								<button id="selectedDefault" type="button" id="variable_button1" class="round-corners-menu-btn selectable activable" data-toggle="collapse" data-target="#variable_info1" aria-expanded="false" aria-controls="variable_info1">
+									Servicios</button>
 
 								<!-- <div class="collapse fade show" id="variable_info1" aria-labelledby="variable_button1" data-parent="#variable_infoParent">
 									<div class="navbar">
@@ -155,7 +154,7 @@
 							<img src="imagesjv/icon_mantenimiento.svg" alt="Chrome"> 
                             <br><span style="white-space: normal;font-size: 1rem">Mantenimiento</span>
 						</button>
-                        <button type="button" class="round-corners-menu-btn selectable m-3">
+                        <button type="button" class="round-corners-menu-btn selectable m-3" onClick="print_vuelos()">
 							<img src="imagesjv/icon_horario_vuelos.svg" alt="Chrome">
                             <br><span style="white-space: normal;font-size: 1rem">Vuelos</span>
 						</button>
@@ -354,7 +353,8 @@
   	}
 
 </script>	
-
+<script src="js/dmd.js"></script>
+<script src="js/funciones.js"></script>
 </body>
 
 </html>

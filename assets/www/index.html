@@ -8,19 +8,22 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="js/loading.min.css">-->
+	<link rel="stylesheet" href="js/loading.min.css">
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/stylesv2.css?v=1">
 
 	<title>Home</title>
-
 
 	<script src="js/jquery-3.3.1.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/jquery.navigate.js"></script>
 	<script src="js/custom-keyboard-navigation.js"></script>
+   	<script type="text/javascript" src="file:///android_asset/www/cordova.js"></script> 
+	<script src="js/zepto.min.js"></script>
+	<script src="js/jquery.loading.min.js"></script> 
 
 
 </head>
@@ -31,10 +34,10 @@
 		<ul class="navbar-nav">
 			<li class="nav-item ml-3  mt-3">
 				<h3 class="text-white">
-					<div class="d-inline-block">
+					<div class="d-inline-block" id="fecha_top">
 					Martes 6 de Noviembre 2018 |
 					</div>
-					<div class="d-inline-block"> Hora: 8:00pm | 
+					<div class="d-inline-block"> Hora: <span id="hora_top">8:00pm</span> | 
 						<a class="badged-item d-inline-block selectable-contour selectable" href="#" data-toggle="collapse" data-target="#messagesContainer" aria-expanded="false" aria-controls="variable_info2">
 					  		
 								<span class="notify-badge">1</span>
@@ -47,136 +50,42 @@
 			</li>
 		</ul>
 
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="./apps.html">
 			<img src="./imagesjv/icon_logo.svg" class="align-top" alt="Movich Hotels logo">
 		</a>
 	</nav>
-
-	<!-- MESSAGES -->
-	<div class="messages-container collapse" id="messagesContainer">
-		<button type="button" class="close text-white px-1 selectable-contour selectable " data-toggle="collapse" data-target="#messagesContainer" aria-label="Close">
-    		<span aria-hidden="true">&times;</span>
-  		</button>
-		<div class="message">
-			<p class="text-justify"><span class="fa fa-caret-right"></span> Mensaje 1. dsmfk adflsd fsd fsdf sdf......</p>
-		</div>
-		<div class="message">
-			<p class="text-justify"><span class="fa fa-caret-right"></span> Mensaje 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Quod architecto vero tempore fuga molestiae quidem nam.
-							Perferendis vitae laborum nesciunt aliquam reprehenderit ea!</p>
-		</div>
-		<div class="message">
-			<p class="text-justify"><span class="fa fa-caret-right"></span> Mensaje 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Quod architecto vero tempore fuga molestiae quidem nam.
-							Perferendis vitae laborum nesciunt aliquam reprehenderit ea!</p>
-		</div>
-	</div>
-
-	<!--CONTENT-->
-	<div class="container">
-		<div class="row">
+    
+<div id="cuerpo">	<!-- EMPIEZA CONTENIDO DINAMICO -->
+    
+<div class="container content px-5">
+		<div class="row h-100 justify-content-center align-items-center mt-2 mb-2 overflow-hidden">
 
 			<!--INFO-->
-			<div class="col-lg-6">
+			<div class="col-6 vh-67 my-vh-1-5">
+				<div class="row d-flex flex-column">
+<div class="text-center mt-4">
+											<h2  style="text-align: center;color: #ffffff;"><p>... Cargando Interactividad ... </p></h2>
+										</div>
+				<section class="wrapper dark">
 				
-				<div class="card bg-overlay text-white overflow-auto">
-					<div class="card-body font-weight-bold">
-						<h1 class="card-title text-yellow font-weight-bold">
-							Bienvenido Sr Lizarazo
-						</h1>
-						<p class="card-text">
-							Estimado Huésped.
-						</p>
-						<p class="card-text">
-							Es un verdadero placer recibirlo en nuestro hotel y le aseguramos que todo nuestro equipo
-							está comprometido en lograr que su estadia sea la más placentera.
-						</p>
-						<p class="card-text">
-							Bienvenido!
-						</p>
-						
-						<table class="custom-table">
-							<tr>
-							<td class="text-left">
-								Fecha Check In
-							</td>
-							<td>
-								06/11/2018
-							</td>
-							</tr>
-							
-							<tr>
-							<td class="text-left">
-								Fecha Check Out
-							</td>
-							<td>
-								09/11/2018
-							</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Octubre 25</td>
-								<td><span id="picoyplaca"> 3 / 4</span> <br>
-											Pico y Placa
-								</td>
-							</tr>
-							<tr>
-								
-								<td>
-									
-									<span class="border-right pr-2">
-										<i class="fas fa-dollar-sign"></i>
-									</span>
-									<span class="ml-2" >
-										TRM <span id="dolar">$ 3.031,31</span> COP
-									</span>
-								</td>
-							</tr>
-
-							<tr>
-								<td>
-									<span class="border-right pr-2" >
-										<span id="clima">16</span>°
-									</span>
-									<span class="border-right px-4">
-										Cali - Valle
-									</span>
-									<span class="px-2">
-										<a href="apps.html"> <i class="fas fa-cloud m-auto"></i></a>
-									</span>
-								</td>
-								<td>
-									<span class="border-right pr-2">
-									<i class="fas fa-euro-sign"></i>
-									</span>
-									<span class="ml-2">
-										Euro  $ <span id="euro">3.513,41</span>  COP
-									</span>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-					
-			</div>
-
-			<!--VIDEO-->
-			<div class="col-lg-6">
-				<div class="card text-left overflow-auto text-white">
-					<div class="embed-responsive embed-responsive-16by9">
-						
-						<video autoplay muted controls loop>
-						<source src="./video/video.mp4" type="video/mp4">
-							video no soportado
-						</video>
-						
-					</div>
+				  <div class="spinner">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				  </div>
+				</section>				
+				
 				</div>
 			</div>
 
 		</div>
 	</div>
 
-
+</div>     <!-- TERMINA CONTENIDO DINÁMICO -->
 
 	<!--FOOTER-->
 	<nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-gradient-down-up p-2">
@@ -210,7 +119,7 @@
 
 			
 			
-			<a class="btn menu-icon selectable" href="./netflix.html">
+			<a class="btn menu-icon selectable" onclick="aaap('com.netflix.mediaclient')" href="#">
 
 				<div class="col text-center  icon-contour">
 					
@@ -279,18 +188,11 @@
 
 		
 	</nav>
-  <script type="text/javascript">
-/*
-function aaap(appa){
-	$.showLoading({name: 'circle-fade',allowHide: true}); 
-	window.launch.app({package:appa, activity:'MainActivity'});
-}
-
-$.showLoading({name: 'circle-fade',allowHide: true}); 
-*/
-</script>	
-<!--<script src="js/dmd.js"></script>
-<script src="js/funciones.js"></script> -->
+<script src="js/dmd.js"></script>
+<script src="js/funciones.js"></script>
+<script type="text/javascript">
+	setTimeout(autoIni, 50);	
+</script>
 </body>
 
 </html>

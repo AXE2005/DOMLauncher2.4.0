@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
 
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,9 +15,10 @@
 	
 	
 	<link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+	 <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/stylesv2.css">
 
-	<title>TV</title>
+	<title>Guia local</title>
 
 
 	<script src="js/jquery-3.3.1.min.js"></script> 
@@ -83,14 +85,42 @@
 				<div class="card bg-overlay text-white info-list overflow-auto">
 					<div class="card-body">
 						<a href="./index.html" class="back-btn selectable">
-						<i class="fa fa-arrow-left fa-1.5x"></i>
+						<i class="fa fa-chevron-left fa-1.5x"></i>
 						</a>
 						<h4 class="section-title mx-2">
-							TV
+							Parrila de Canales
 						</h4>
 						<div class="clearfix"></div>
 						
+						<nav class="navbar" id="variable_infoParent">
 						
+						
+							<div class="navbar-nav w-100">
+								<!--ITEM 1-->
+								
+								<button id="selectedDefault" type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									Cine
+								</button>
+								<!--ITEM 2-->
+								<button id="selectedDefault" type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									Variedades
+								</button>
+								<!--ITEM 3 -->
+								<button type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									Deportes
+								</button>
+                                <button type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									Opinión
+								</button>
+                                <button type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									Series
+								</button>
+                                <button type="button" class="round-corners-menu-btn selectable activable" onclick="loadContent(this)">
+									HD
+								</button>								
+								
+							</div>
+						</nav>
 					</div>
 				</div>
 				
@@ -99,11 +129,8 @@
 
 			<!--VIDEO-->
 			<div class="col-lg-8">
-				<div class="card border-0 text-center overflow-auto pt-3">
-					<h3 id="varTitle" class="section-title mb-5">
-						TV
-					</h3>
-					<iframe src="" style="min-height: 50vh"></iframe>
+				<div id="variableContent" class="card border-0 overflow-auto pt-3" style="display: none;" > 
+					<img id="varImage" class="card-img-top img-back-white" src="imagesjv/cine.png" onClick="alert('Presione go-TV en su control remoto y coloque el número para ver este canal de TV')">                    					
 				</div>
 			</div>
 
@@ -121,106 +148,144 @@
 		</div>
 
 
-			<div class="collapse navbar-collapse" id="nav-content2">   
-				<a id="selectedDefault" class="btn menu-icon selectable" href="./info_hotel.html">
-					<div class="col text-center icon-contour">
-							<img src="./imagesjv/icon_info.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span>INFO HOTEL</span>
-					</div>
-				</a>
-
-				
-				<a class="btn menu-icon selectable active" href="./tv.html">
-					<div class="col text-center  icon-contour">
-							<img src="./imagesjv/icon_tv.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span>TV</span>
-						
-					</div>
-				</a>
-
-				
-				
-				<a class="btn menu-icon selectable" href="./netflix.html">
-
-					<div class="col text-center  icon-contour">
-						
-							<img src="./imagesjv/icon_netflix.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span >NETFLIX</span>
-						
-					</div>
-				</a>
-
-				
-				
-				<a class="btn menu-icon selectable" href="./room_service.html">
-					<div class="col text-center icon-contour">
-						<img src="./imagesjv/icon_room_service.svg">
+		<div class="collapse navbar-collapse" id="nav-content2">   
+			<a  class="btn menu-icon selectable" href="./info_hotel.html">
+				<div class="col text-center icon-contour">
+						<img src="./imagesjv/icon_info.svg">
 						<div class="overlay-darken bg-gradient-down-up"></div>
 						<br>
-						<span >ROOM SERVICE</span>
-					</div>
-				</a>
+						<span>INFO HOTEL</span>
+				</div>
+			</a>
 
-				
-				
-				<a class="btn menu-icon selectable" href="./entertaiment.html">
-					<div class="col text-center  icon-contour">
-						
-							<img src="./imagesjv/icon_entretenimiento.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span >ENTRETENIMIENTO</span>
-						
-					</div>
-				</a>
+			
+			<a class="btn menu-icon selectable" href="./tv.html">
+				<div class="col text-center  icon-contour">
+						<img src="./imagesjv/icon_tv.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span>TV</span>
+					
+				</div>
+			</a>
 
-				
-				
-				<a class="btn menu-icon selectable" href="./servicios.html">
-					<div class="col text-center  icon-contour">
-							<img src="./imagesjv/icon_servicios.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span >SERVICIOS</span>
-						
-					</div>
-				</a>
+			
+			
+			<a class="btn menu-icon selectable" href="./netflix.html">
 
-				
-				
-				<a class="btn menu-icon selectable" href="./guialocal.html">
-					<div class="col text-center  icon-contour">
-						
-							<img src="./imagesjv/icon_guia_local.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span >GUIA LOCAL</span>
-						
-					</div>
-				</a>
+				<div class="col text-center  icon-contour">
+					
+						<img src="./imagesjv/icon_netflix.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span >NETFLIX</span>
+					
+				</div>
+			</a>
 
-				
-				
-				<a class="btn menu-icon selectable" href="./account.html">
-					<div class="col text-center  icon-contour">
-						
-							<img src="./imagesjv/icon_estado_cuenta.svg">
-							<div class="overlay-darken bg-gradient-down-up"></div>
-							<br>
-							<span >ESTADO DE CUENTA</span>
-						
-					</div>
-				</a>
-			</div>
+			
+			
+			<a class="btn menu-icon selectable" href="./room_service.html">
+				<div class="col text-center icon-contour">
+					<img src="./imagesjv/icon_room_service.svg">
+					<div class="overlay-darken bg-gradient-down-up"></div>
+					<br>
+					<span >ROOM SERVICE</span>
+				</div>
+			</a>
+
+			
+			
+			<a class="btn menu-icon selectable" href="./entertaiment.html">
+				<div class="col text-center  icon-contour">
+					
+						<img src="./imagesjv/icon_entretenimiento.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span >ENTRETENIMIENTO</span>
+					
+				</div>
+			</a>
+
+			
+			
+			<a class="btn menu-icon selectable" href="./servicios.html">
+				<div class="col text-center  icon-contour">
+						<img src="./imagesjv/icon_servicios.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span >SERVICIOS</span>
+					
+				</div>
+			</a>
+
+			
+			
+			<a class="btn menu-icon selectable active" href="./guialocal.html">
+				<div class="col text-center  icon-contour">
+					
+						<img src="./imagesjv/icon_guia_local.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span >GUIA LOCAL</span>
+					
+				</div>
+			</a>
+
+			
+			
+			<a class="btn menu-icon selectable" href="./account.html">
+				<div class="col text-center  icon-contour">
+					
+						<img src="./imagesjv/icon_estado_cuenta.svg">
+						<div class="overlay-darken bg-gradient-down-up"></div>
+						<br>
+						<span >ESTADO DE CUENTA</span>
+					
+				</div>
+			</a>
+		</div>
 
 		
 	</nav>
+  <script type="text/javascript">
+  	var displaying='';
+  	function loadContent(btn){
+  		var animation="slideInRight";
+  		$("#variableContent").hide();
+  		var btnName=$(btn)[0].innerText;
+  		//$("#varTitle").html(btnName);
+  		switch(btnName){
+  			case("Cine"):
+  				$("#varImage").attr("src","imagesjv/cine.png");
+				break;
+  			case("Variedades"):
+				$("#varImage").attr("src","imagesjv/variedades.png")
+				break;
+  			case("Deportes"):
+				$("#varImage").attr("src","imagesjv/deportes.png")
+				break;
+  			case("Opinión"):
+				$("#varImage").attr("src","imagesjv/opinion.png")
+				break;	
+  			case("Series"):
+				$("#varImage").attr("src","imagesjv/series.png")
+				break;
+  			case("HD"):
+				$("#varImage").attr("src","imagesjv/hd.png")
+				break;													
+  		}
+  		if(!$('#variableContent').is(':visible')){
+  			$("#variableContent").addClass('animated '+animation);
+  			$("#variableContent").show();	       
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                $("#variableContent").removeClass('animated '+animation);
+            }, 1000);
+        }
+  	}
+
+</script>	
 
 </body>
 

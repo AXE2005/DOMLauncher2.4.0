@@ -467,6 +467,23 @@ a.menu-icon:active,a.menu-icon:focus {
 	border: none!important;
 }
 
+#infoVuelo{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid;
+    border-color: #E0E0E0;
+}
+.aerolinea, .destino, .hora, .llegada{ width: 100%; /* color: #525858;*/}
+
+.pull-right {
+    float: right !important;
+}
+
+.aerolinea { font-weight: 600; font-size: 1.1em; }
+.salida{ font-weight: 400; font-size: 1em; }
+.destino, .hora{font-weight: 400; padding-top: 0px; font-size: .8em; color: #8c8c8c;}
+/*#vuelo{color: #866114; }*/
 
 .service-order div {
 	text-align: left;
@@ -627,7 +644,8 @@ a.menu-icon:active,a.menu-icon:focus {
 }
 
 .img-back-white {
-	background: rgba(255, 255, 255, 0.7);
+	/*background: rgba(255, 255, 255, 0.7);*/
+	background: #ffffff;
 	padding: 2rem;
 }
 
